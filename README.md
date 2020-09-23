@@ -1,3 +1,0 @@
-# freeCodeCamp
-
-A description.
