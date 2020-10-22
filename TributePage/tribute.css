@@ -1,0 +1,32 @@
+* {
+    background-color: rgb(240,240,240);
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-row-gap: 20px;
+    padding-bottom: 10px;
+}
+
+#title {
+    font: 50px Arial solid;
+    font-weight: bold;
+}
+
+#tribute-info {
+    font: 20px Arial solid;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+section {
+    max-width: 100%;
+    margin: auto;
+}
