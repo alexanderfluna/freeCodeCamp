@@ -9,16 +9,20 @@
   
   <body>
     
+    <!-- Header section-->
     <header class="header">
       <h1 id="title">  What's Your Coding Experience?</h1>
       <h2 id="subtitle"> Survey Form </h2> 
       <p id="description"> This survey is meant to gather data on our user's coding experience.</p>
       </header>
     
-    
+    <!-- Creates form-->
     <form id="survey-form">
+      <!-- Use same class for each section of form for better css -->
       <div class="form-group">
+        <!-- <label> is for the text before the prompt-->
         <label id="name-label" for="name">Name</label>
+        <!-- <input> determines what kind of prompt. This will be for name -->
         <input
                type="text"
                name="name"
@@ -29,7 +33,7 @@
                />
       </div>
       
-      
+      <!-- Email -->
       <div class="form-group">
         <label id="email-label" for="email">Email</label>
         <input
@@ -42,7 +46,7 @@
                />
       </div>
       
-      
+      <!-- Number scroller -->
       <div class="form-group">
         <label id="number-label" for="number">Birth year</label>
         <input
@@ -57,7 +61,7 @@
                />
       </div>
       
-      
+      <!-- Dropdown -->
       <div class="form-group">
         <p>How long have you been coding?</p>
         <select id="dropdown" name="role" class="form-control" required>
@@ -71,7 +75,7 @@
         </select>
       </div>
           
-      
+      <!-- Bubble points -->
     <div class="form-group">
       <p>How far have you gone in your education?</p>
       <label>
@@ -106,7 +110,7 @@
                />PhD</label>
      </div>
       
-      
+      <!--Check box -->
       <div class="form-group">
         <p>Pick which you are proficient at</p>
         <label>
@@ -152,6 +156,7 @@
                     ></textarea>
         </div>
         
+        <!-- Submit box -->
         <div class ="form-group">
           <button type="submit" id="submit" class="submit-button">
             Submit
