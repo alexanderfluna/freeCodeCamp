@@ -1,36 +1,160 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-<header class="header">
-  <h1 id="title">  What's Your Coding Experience?</h1>
-  <h2 id="subtitle"> Survey Form </h2> 
-  <p id="description"> This survey is meant to gather data on our user's coding experience.</p>
-</header>
-
-<form id="survey-form">
-  <div class="form-group">
-    <label id="name-label" for="name">Name</label>
-  <input
-         type="text"
-         name="name"
-         id="name"
-         class="form-control"
-         placeholder="Enter your name"
-         required
-         />
-  </div>
-  <div class="form-group">
-    <label id="email-label" for="email">Email</label>
-    <input
-           type="text"
-           name="email"
-           id="email"
-           class="form-control"
-           placeholder="Enter your email"
-           required
-           />
-  </div>
-           
+<html lang="eng">
+  <head>
+    <title>
+      Form
+    </title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  
+  
+  <body>
+    
+    <header class="header">
+      <h1 id="title">  What's Your Coding Experience?</h1>
+      <h2 id="subtitle"> Survey Form </h2> 
+      <p id="description"> This survey is meant to gather data on our user's coding experience.</p>
+      </header>
     
     
-</form>
-
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+               type="text"
+               name="name"
+               id="name"
+               class="form-control"
+               placeholder="Enter your name"
+               required
+               />
+      </div>
+      
+      
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter your email"
+               required
+               />
+      </div>
+      
+      
+      <div class="form-group">
+        <label id="number-label" for="number">Birth year</label>
+        <input
+               type="number"
+               name="birth-year"
+               id="number"
+               min="1903"
+               max="2020"
+               class="form-control"
+               placeholder="Enter..."
+               required
+               />
+      </div>
+      
+      
+      <div class="form-group">
+        <p>How long have you been coding?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select time</option>
+          <option value="<1">Less than one year</option>
+          <option value="1">One year</option>
+          <option value="2">Two years</option>
+          <option value="3">Three years</option>
+          <option value="4">Four years</option>
+          <option value="5+">Five or more years</option>
+        </select>
+      </div>
+          
+      
+    <div class="form-group">
+      <p>How far have you gone in your education?</p>
+      <label>
+        <input
+               name="education"
+               value="high-school"
+               type="radio"
+               class="input-radio"
+               checked
+               />High School</label>
+      <label>
+        <input
+               name="education"
+               value="associate-degree"
+               type="radio"
+               class="input-radio"
+               />Associate Degree</label>
+      <label>
+      <label>
+        <input
+               name="education"
+               value="master-degree"
+               type="radio"
+               class="input-radio"
+               />Master Degree</label>
+      <label>
+        <input
+               name="education"
+               value="phd"
+               type="radio"
+               class="input-radio"
+               />PhD</label>
+     </div>
+      
+      
+      <div class="form-group">
+        <p>Pick which you are proficient at</p>
+        <label>
+          <input
+               name="proficient"
+               value="front-end"
+               type="checkbox"
+               class="input-checkbox"
+               />Front-end</label>
+                 
+         <label>
+          <input
+               name="proficient"
+               value="back-end"
+               type="checkbox"
+               class="input-checkbox"
+               />Back-end</label>
+      
+        <label>
+          <input
+               name="proficient"
+               value="data-analytics"
+               type="checkbox"
+               class="input-checkbox"
+               />Data Analytics</label>
+    
+        <label>
+          <input
+               name="proficient"
+               value="game-development"
+               type="checkbox"
+               class="input-checkbox"
+               />Game Development</label>
+        
+        
+        <div class="form-group">
+          <p>What else would you like to add?</p>
+          <textarea
+                    id="add"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter here..."
+                    ></textarea>
+        </div>
+        
+        <div class ="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+  </form>      
