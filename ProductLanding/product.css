@@ -1,0 +1,64 @@
+header {
+    /* Aligns the text */
+   text-align: center;
+ }
+ 
+ /* Changes id nav-bar */
+ #nav-bar {
+   /* Adds a border & its color around the nav element */
+   border: solid #ccc ;
+   /* Changes width of the border */
+   border-width: 10px;
+   /* Changes distance of other elements from the nav */
+   margin: 10px;
+   /* Changes amount of white space inside of nav element*/
+   padding: 5px;
+   /* Keeps the nav in the same position */
+   position: fixed;
+   /* Set to full width of the page */
+   width: 100%;
+   /* Manually keeps the nav at the top of viewport */
+   top: 0;
+   left: 0;
+ }
+ 
+ /* Changes class nav-item */
+ .nav-item {
+   /* Changes display so it's horizontal(inline) */
+   display: inline;
+   /* Removes the bullet points */
+   list-style: none;
+ }
+ 
+ /* Changes class nav-link */
+ .nav-link {
+   /* Changes space around each link from each other */
+   margin: 20px;
+ }
+ 
+ /* Changes id header-img */
+ #header-img {
+   /* Changes size of the image */
+   width: 20%;
+   /* Image changes when user changes percentage */
+   height: auto;
+   /* Image never goes above 100% */
+   max-width: 100%;
+ }
+ 
+ body {
+   /* Flex boxes can change the way an element is formatted in a row or column */
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ h1 {
+   text-align: center;
+ }
+ 
+/* Search up what this does */
+@media (max-width: 545px ){
+    h1 {
+      font-size: 1.15em;
+  }
+}
