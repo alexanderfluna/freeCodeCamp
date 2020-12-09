@@ -1,0 +1,34 @@
+main {
+    /* Puts the website into a grid format */
+    display: grid;
+    grid-template-columns: minmax(300px, auto)1fr;
+    grid-gap: 20px;
+}
+  
+#navbar {
+    /* Adds a border & its color around the nav element */
+    border: solid #ccc ;
+    /* Changes width of the border */
+    border-width: 10px;
+    /* Changes distance of other elements from the nav */
+    margin: 10px;
+    /* Changes amount of white space inside of nav element*/
+    padding: 5px;
+    /* Set to full width of the page */
+    width: 25%;
+    /* Keeps nav bar on the left side of the screen */
+    position: fixed;
+    left: 0;
+}
+  
+ul {
+    display: inline;
+    list-style: none;
+}
+  
+code{
+    background-color: silver;
+    display: block;
+    padding: 20px;
+}
+  

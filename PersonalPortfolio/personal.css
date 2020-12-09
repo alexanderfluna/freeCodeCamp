@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar {
+     /* Adds a border & its color around the nav element */
+     border: solid #ccc ;
+     /* Changes width of the border */
+     border-width: 10px;
+     /* Changes distance of other elements from the nav */
+     margin: 10px;
+     /* Changes amount of white space inside of nav element*/
+     padding: 5px;
+     /* Keeps the nav in the same position */
+     position: fixed;
+     /* Set to full width of the page */
+     width: 100%;
+     /* Manually keeps the nav at the top of viewport */
+     top: 0;
+     left: 0;
+  }
+  
+  nav ul {
+      text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    font-size:20px;
+  }
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: red;
+  }
+  
+  #welcome-section {
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari     7+ */
+    min-height: 100vh;
+  }
+  
+  #projects {
+    background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+  }
+  
+  #contact-section {
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #navbar {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    text-align: right;
+    color: #000;
+    z-index: 100;
+    }
+  }
